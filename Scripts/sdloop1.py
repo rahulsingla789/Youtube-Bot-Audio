@@ -6,7 +6,7 @@ if next_article is not None:
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "user", "content": "From now on which ever topic i give you, you will generate a promt for stable diffusion(image generation basically)on that topic.ill give you a example if the topic is about a football player ,you will create a propmt that will be used in a video of facts about that basketball player,try to create relevent images such as basketball court in that particular situation.If you understand, say OK."},
+            {"role": "user", "content": "From now on which ever topic i give you, you will generate a single photo prompt for stable diffusion(image generation basically)on that topic.ill give you a example if the topic is about a football player ,you will create a propmt that will be used in a video of facts about that Football player,try to create relevent images such as football field in that particular situation.If you understand, say OK."},
             {"role": "assistant", "content": "OK."},
             #{"role": "user", "content":"Narendra Modi"},
             #{"role": "assistant", "content": "'Title: Narendra Modi - India\'s Visionary Leader | Incredible Facts and Achievements\n\nIntro:\n[Upbeat music playing]\nNarrator: Welcome back to our channel,"},
