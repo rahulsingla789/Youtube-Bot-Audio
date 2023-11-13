@@ -22,7 +22,7 @@ try:
     most_viewed_articles = data["query"]["mostviewed"]
 
     # Create or open a text file for writing
-    with open("most_viewed_articles.txt", "w", encoding="utf-8") as file:
+    with open("list.txt", "w", encoding="utf-8") as file:
         # Loop through and write the titles of the most-viewed articles to the file
         for i, article in enumerate(most_viewed_articles, start=1):
             title = article["title"]
